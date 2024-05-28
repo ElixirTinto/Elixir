@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir Tinto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body> 
+
+    <!-- Creación del header con divisiones y containers para que quede ordenado, con logo e iconos -->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                     <i class="fa-solid fa-headset"></i>  
+                    <div class="content-customers-support">
+                        <span class="tex">Soporte al Cliente</span>
+                        <span class="number">800-345-625</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <img class="Logo" src="./Logos/Elixir tinto.png" alt="Logo"> <!-- Logo Página -->
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="tex">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Creación del navbar -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">   <!-- Menú de la página -->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cervezas.html">Cervezas</a></li>
+                    <li><a href="vinos.html">Vinos</a></li>
+                    <li><a href="licores.html">Licores</a></li>
+                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+                <form class="search-form">  <!-- Creación de la barra de búsqueda -->
+                    <input type="search" placeholder="Buscar..."/>
+                    <button class="btn-search">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor de productos -->
+    <div class="products-container">
+    
+        <div class="product-card" data-title="Aperitivo Convier Piña Colada" data-details="El Convier de piña es un aperitivo 100% natural con extractos de piña. Es un licor apropiado para elaborar cocteles. Para preparar: Strawberry colada. País: Colombia." data-price="36805">
+            <div class="image-container">
+                <img src="./licor1.png" alt="Aperitivo Convier Piña Colada">
+                <span class="discount">$36.805</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+        
+
+        <div class="product-card" data-title="Aperitivo Coloma Crema De Whisky" data-details="El Aperitivo de Coloma es una crema de whisky suave con base láctea mezclada con café y moderado contenido alcohólico. Se recomienda tomarla frío o en las rocas. Es una buena opción para mezclar con otros ingredientes para cocteles. País: Colombia." data-price="46155">
+            <div class="image-container">
+                <img src="./licor2.png" alt="Aperitivo Coloma Crema De Whisky">
+                <span class="discount">$46.155</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+
+        <div class="product-card" data-title="Crema de Cafe Coloma" data-details="" data-price="61740">
+            <div class="image-container">
+                <img src="./licor3.png" alt="Crema de Cafe Coloma">
+                <span class="discount">$61.740</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Aperitivo Lillet Blanco" data-details="El Lillet clasificado como un vino aromatizado, es un aperitivo a base de vino francés. Con una mezcla de 85% de vinos de la región de burdeos semillon para Blanc y Rosé, Merlot para Rouge y 15% de licores macerados, principalmente licores cítricos (cáscaras de naranjas dulces de España y marruecos y cáscaras de naranjas verdes amargas de haití. La mezcla se añeja en tinas de roble. Con aroma a flores, naranjas confitadas, miel, resina de pino y frutas exóticas. País: Francia." data-price="101520">
+            <div class="image-container">
+                <img src="./licor4.png" alt="Aperitivo Lillet Blanco">
+                <span class="discount">$101.520</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Ron Cacique Añejo" data-details="El Cacique Añejo es un ron de color dorado con destellos brillantes. Su sabor está marcado por el intenso sabor de toques ahumados con notas amaderadas. Contiene aromas a notas sutiles a pastelería y dulces como canela, caramelo y madera." data-price="71600">
+            <div class="image-container">
+                <img src="./licor5.png" alt="Ron Cacique Añejo">
+                <span class="discount">$71.600</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Aperitivo Blanco Fizzy Jp Chenet" data-details="El Aperitivo Fizzy JP Chenet Blanc, es fresco y afrutado con sabores de frutos amarillos y citrus, y con aromas intensos de frutos tropicales, albaricoque y lima su final es agradable y equilibrado; Es perfecto para llevar en picnics, fiestas, playas, con amigos o consumo fuera de casa. País: Francia." data-price="10600">
+            <div class="image-container">
+                <img src="./licor6.png" alt="Aperitivo Blanco Fizzy Jp Chenet">
+                <span class="discount">$10.600</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Whisky Monkey Shoulder" data-details="El whisky Monkey Shoulder se diferencia al tener mezcla que se compone de tres single malts que aportan un sabor único, donde las distintas edades, sabores y aromas trabajan en conjunto para entregar un líquido versátil, ideal para su consumo puro en coctelería. Al ser combinadas se obtienen notas cítricas (naranja), florales (vanilla) y especiados (canela y jengibre), al mismo tiempo evitando las notas demasiado ahumadas. País: Escocia." data-price="149200">
+            <div class="image-container">
+                <img src="./licor7.png" alt="Whisky Monkey Shoulder">
+                <span class="discount">$149.200</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Whisky Glenfiddich 12 Años" data-details="Glenfiddich 12 años, Es un whisky escocés de una sola malta con distintivos sabores a pera fresca, cremoso y con sabor a roble tostado con un acabado maduro, largo y suave. Madurado con extremo cuidado en barricas de bourbon americano y jerez español al menos durante 12 años. Maridado y añejado en barricas de roble para lograr una completa armonía de aroma y sabor. País: Escocia." data-price="196600">
+            <div class="image-container">
+                <img src="./licor8.png" alt="Whisky Glenfiddich 12 Años">
+                <span class="discount">$196.600</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Whisky Buchanans Deluxe Blended 12 Años Escocés" data-details="El Buchanans Deluxe es un whisky suave con sabores frutales, toques de naranja y chocolate. Se recomienda servirlo en las rocas o con soda, adornado con piel de naranja. Ganador de diversos premios internacionales, una botella de Buchanan's Deluxe constituye un regalo elegante para quienes disponen de un minibar completo para servir en cualquier celebración. Cocteles más conocidos con whisky: Bloody Mary Green, Breeze of Miami y Summer is Here." data-price="165000">
+            <div class="image-container">
+                <img src="./licor9.png" alt="Whisky Buchanans Deluxe Blended 12 Años Escocés">
+                <span class="discount">$165.000</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+
+
+  
+    <!-- Descripción ampliada del producto -->
+    <div class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" src="" alt="Producto">
+            <div class="modal-description">
+                <h2 class="modal-title"></h2>
+                <p class="modal-details"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+        <div class="cart-items"></div> <!-- Contenedor de elementos del carrito -->
+        <a href="#" id="view-cart">Ver compra</a>
+    </div>
+    
+    
+    
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>
+

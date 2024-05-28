@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir Tinto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body> 
+
+    <!-- Creación del header con divisiones y containers para que quede ordenado, con logo e iconos -->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                     <i class="fa-solid fa-headset"></i>  
+                    <div class="content-customers-support">
+                        <span class="tex">Soporte al Cliente</span>
+                        <span class="number">800-345-625</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <img class="Logo" src="./Logos/Elixir tinto.png" alt="Logo"> <!-- Logo Página -->
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="tex">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Creación del navbar -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">   <!-- Menú de la página -->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cervezas.html">Cervezas</a></li>
+                    <li><a href="vinos.html">Vinos</a></li>
+                    <li><a href="licores.html">Licores</a></li>
+                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+                <form class="search-form">  <!-- Creación de la barra de búsqueda -->
+                    <input type="search" placeholder="Buscar..."/>
+                    <button class="btn-search">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor de productos -->
+    <div class="products-container">
+    
+        <div class="product-card" data-title="Champagne Veuve Clicquot Brut Label Arrow" data-details="Champagne Veuve Clicquot Brut Yellow Label Arrow. La presentación de la botella es de 750 ml en una caja que está elaborada sin plásticos, siendo más sostenible. ¡Sorprenda a esa persona con un regalo único! Debe consumirse a una temperatura de 8 a 10° C. - Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="420000">
+            <div class="image-container">
+                <img src="./vino1.png" alt="Champagne Veuve Clicquot Brut Label Arrow">
+                <span class="discount">$420.000</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+        
+
+        <div class="product-card" data-title="Vino Tinto La Celia Reserva Malbec Cabernet Franc" data-details="El vino tinto la Celia es un vino argentino reserva que viene por botella de 750 ML. El tipo de uva es 80% Malbec y 20% Cabernet Franc. ¡Un vino tinto es el complemento perfecto para tus celebraciones! Debe consumirse a una temperatura de 16° C. - Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="46498">
+            <div class="image-container">
+                <img src="./vino2.png" alt="Vino Tinto La Celia Reserva Malbec Cabernet Franc">
+                <span class="discount">$46.498</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+
+        <div class="product-card" data-title="Vino Tinto Cousiño Macul Don Luis Carmenere" data-details="El vino tinto Cousiño Macul Varietal es un vino chileno varietal que viene por 750 ML. El tipo de uva es 100% Merlot. Debe consumirse a una temperatura de 16 -18°C. -Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="42880">
+            <div class="image-container">
+                <img src="./vino3.png" alt="Vino Tinto Cousiño Macul Don Luis Carmenere">
+                <span class="discount">$42.280</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Vino Tinto La Celia Reserva Malbec" data-details="El vino tinto La Celia es un vino argentino reserva que viene en botella de 750 ML. El tipo de uva es 95% Malbec, 5% Cabernet Sauvignon. Disfruta de una noche romántica con una copa de vino. Debe consumirse a una temperatura de 16° C. - Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="46498">
+            <div class="image-container">
+                <img src="./vino4.png" alt="Vino Tinto La Celia Reserva Malbec">
+                <span class="discount">$46.498</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Vino Blanco Cousiño Macul Don Luis Chardonnay" data-details="El vino blanco Cousiño Macul Varietal es un vino chileno que viene por 750 ML. El tipo de uva es 100% Chardonnay. ¡Disfruta de un vino blanco con un ceviche! Debe consumirse a una temperatura de 10 - 12 °C. -Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="42880">
+            <div class="image-container">
+                <img src="./vino5.png" alt="Vino Blanco Cousiño Macul Don Luis Chardonnay">
+                <span class="discount">$42.880</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Vino Rosado Cousiño Macul Gris Cabernet Sauvignon" data-details="El vino rosado Cousiño Gris Macul es un vino chileno varietal. El tipo de uva es 100% Cabernet Sauvignon. ¡En Dislicores te acompañamos con una variedad de vinos rosados chilenos! Debe consumirse a una temperatura de 10-12 °C. - Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="42880">
+            <div class="image-container">
+                <img src="./vino6.png" alt="Vino Rosado Cousiño Macul Gris Cabernet Sauvignon">
+                <span class="discount">$42.880</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Vino Tinto La Celia Reserva Pioneer Malbec" data-details="El vino La Celia Reserva Pionner es un vino argentino. El tipo de uva es 100% Malbec. ¡Un asado con un vino tinto reserva es la combinación ideal! Debe consumirse a una temperatura de 16° C. -Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="67335">
+            <div class="image-container">
+                <img src="./vino7.png" alt="Vino Tinto La Celia Reserva Pioneer Malbec">
+                <span class="discount">$67.335</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Vino Tinto Santa Helena Gran Reserva Carmenére" data-details="El vino tinto Santa Helena Gran Reserva es un vino chileno de 750 ml. El tipo de uva es Carmenére. Disfruta de una cena deliciosa con una copa de vino tinto chileno! Debe consumirse a una temperatura de 15 a 17° C. Ideal para acompañar con comida mexicana, china y thai. También con cerdo, pato, aves de caza y quesos. - Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="59429">
+            <div class="image-container">
+                <img src="./vino8.png" alt="Vino Tinto Santa Helena Gran Reserva Carmenére">
+                <span class="discount">$59.429</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Vino Tinto Santa Helena Reserva Merlot" data-details="El vino Santa Helena es un vino tinto chileno reserva que viene en botella 750 ML. El tipo de uva es 85% Merlot y 5% Carmenère. ¿Quieres sorprender con un buen vino tinto chileno en tus citas? Debe consumirse a una temperatura de 16 a 18° C. - Dislicores no garantiza la añada de los productos, si su decisión de compra está motivada por la añada del producto, por favor comunicarse directamente con servicio al cliente." data-price="40066">
+            <div class="image-container">
+                <img src="./vino9.png" alt="Vino Tinto Santa Helena Reserva Merlot">
+                <span class="discount">$40.066</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+
+
+  
+    <!-- Descripción ampliada del producto -->
+    <div class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" src="" alt="Producto">
+            <div class="modal-description">
+                <h2 class="modal-title"></h2>
+                <p class="modal-details"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+        <div class="cart-items"></div> <!-- Contenedor de elementos del carrito -->
+        <a href="#" id="view-cart">Ver compra</a>
+    </div>
+    
+    
+    
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>
+

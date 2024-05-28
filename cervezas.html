@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir Tinto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body> 
+
+    <!-- Creación del header con divisiones y containers para que quede ordenado, con logo e iconos -->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                     <i class="fa-solid fa-headset"></i>  
+                    <div class="content-customers-support">
+                        <span class="tex">Soporte al Cliente</span>
+                        <span class="number">800-345-625</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <img class="Logo" src="./Logos/Elixir tinto.png" alt="Logo"> <!-- Logo Página -->
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="tex">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Creación del navbar -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">   <!-- Menú de la página -->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cervezas.html">Cervezas</a></li>
+                    <li><a href="vinos.html">Vinos</a></li>
+                    <li><a href="licores.html">Licores</a></li>
+                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+                <form class="search-form">  <!-- Creación de la barra de búsqueda -->
+                    <input type="search" placeholder="Buscar..."/>
+                    <button class="btn-search">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor de productos -->
+    <div class="products-container">
+    
+        <div class="product-card" data-title="Cerveza Club Colombia x6" data-details="La Cerveza Club Colombia viene en botella en six pack. Es una Lager de color dorado, elaborada con cebada malteada y malta de caramelo. Es una cerveza para las personas que disfruten de experiencias perfectas. País: Colombia." data-price="14800">
+            <div class="image-container">
+                <img src="./cerveza1.png" alt="Club Colombia">
+                <span class="discount">$14.800</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+        
+
+        <div class="product-card" data-title="Ceveza Coronita Extra x6" data-details="La Coronita es de tipo Lager Pilsner, clara y brillante, de espuma blanca y consistente. Tiene notas afrutadas, de cuerpo medio, fresca, balanceada y muy fácil de beber. En boca es dulce y recuerda al sabor del cereal. Su amargor es limpio y ligero." data-price="19500">
+            <div class="image-container">
+                <img src="./cerveza2.png" alt="Cerveza Coronita">
+                <span class="discount">$19.500</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+
+        <div class="product-card" data-title="Cerveza Stella Artois x6" data-details="La Stella Artois es una cerveza de tipo pale lager rubia que tiene un color dorado brillante, con un amargor bajo, una espuma blanca de media persistencia, con aromas a cereal, azúcar tostado y matices florales. Fresca con un final corto y agradable. País: Bélgica." data-price="24400">
+            <div class="image-container">
+                <img src="./cerveza3.png" alt="Cerveza Stella">
+                <span class="discount">$24.400</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Cerveza Cusqueña Dorada" data-details="Cerveza Cusqueña Dorada" data-price="26400">
+            <div class="image-container">
+                <img src="./cerveza4.png" alt="Cusqueña Dorada">
+                <span class="discount">$26.400</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Cerveza Club Colombia Lata X6" data-details="La cerveza Club Colombia es de tipo lager de color dorado, elaborada con cebada malteada y malta de caramelo. Es una cerveza para las personas que disfruten de experiencias perfectas. País: Colombia." data-price="21700">
+            <div class="image-container">
+                <img src="./cerveza5.png" alt="Cerveza Club Colombia Lata">
+                <span class="discount">$21.700</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Cerveza Club Colombia Roja Botella Six Pack" data-details="Cerveza Club Colombia Roja viene en botella de six pack de 300 cc, es lager proviene de la combinación de maltas tipo caramelo y malta tostada y tiene una espuma cremosa que contrasta con el color de la cerveza. ¡Disfruta de una cerveza con tus amigos!" data-price="14800">
+            <div class="image-container">
+                <img src="./cerveza6.png" alt="Cerveza Club Colombia Roja Botella">
+                <span class="discount">$14.800</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Cerveza Budweiser Lata X24" data-details="La cerveza Budweiser es una cerveza tipo lager de color dorado con notas aromáticas de malta y lúpulo. Su sabor fresco y equilibrado se da por sus notas cítricas y afrutadas. País: Estados Unidos." data-price="56700">
+            <div class="image-container">
+                <img src="./cerveza7.png" alt="Cerveza Budweiser Lata">
+                <span class="discount">$56.700</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Cerveza Corona Extra X6" data-details="La Corona es una cerveza de tipo Lager Pilsner, clara y brillante, de espuma blanca y consistente. Tiene notas afrutadas, de cuerpo medio, fresca, balanceada y muy fácil de beber. En boca es dulce y recuerda al sabor del cereal. Su amargor es limpio y ligero. País: México." data-price="28300">
+            <div class="image-container">
+                <img src="./cerveza8.png" alt="Cerveza Corona Extra">
+                <span class="discount">$28.300</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-title="Cerveza Bbc Cajica Miel Botella 330ml X4" data-details="Bbc Cajicá miel es una cerveza rubia, con una generosa adición de miel de abejas y se adiciona a la cerveza durante su elaboración, suave y refrescante. Perfectamente equilibrada en su sabor, ideal para acompañar carnes blancas, comidas con nueces y postres dulces. País: Colombia." data-price="18700">
+            <div class="image-container">
+                <img src="./9.png" alt="Cerveza Bbc Cajica Miel Botella 330ml">
+                <span class="discount">$18.700</span>
+                <span class="add-to-cart-btn"><i class="fas fa-shopping-cart fa-2x"></i></span> <!-- Botón agregar al carrito -->
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+
+
+  
+    <!-- Descripción ampliada del producto -->
+    <div class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" src="" alt="Producto">
+            <div class="modal-description">
+                <h2 class="modal-title"></h2>
+                <p class="modal-details"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+        <div class="cart-items"></div> <!-- Contenedor de elementos del carrito -->
+        <a href="#" id="view-cart">Ver compra</a>
+    </div>
+    
+    
+    
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>
+

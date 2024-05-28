@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Elixir Tinto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body> 
+
+    
+    <!-- creacion del header con divisiones y containers para que quede ordenado, con logo e iconos-->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                     <i class="fa-solid fa-headset"></i>  
+                    <div class="content-customers-support">
+                        <span class="tex">Soporte al Cliente</span>
+                        <span class="number">800-345-625</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <img class="Logo" src="./Logos/Elixir tinto.png" alt=""> <!--Logo Pagina -->
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shooping-cart">
+                        <span class="tex">Carrito</span>
+                        <span class="number">(0)</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- creacion del navbar -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">   <!-- menu de la pagina -->
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="cervezas.html">Cervezas</a></li>
+                    <li><a href="vinos.html">Vinos</a></li>
+                    <li><a href="licores.html">Licores</a></li>
+                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+                <form class="search-form">  <!-- creacion de la barra de busqueda -->
+                    <input type="search "placeholder ="Buscar..."/>
+                    <button class="btn-search">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
+                </form>
+                
+             
+                
+            </nav>
+        </div>
+    </header>
+    <!--banner llamativo sobre la imagen estatica-->
+    <section class="banner">
+        <div class="content-banner">
+            <p>Los Mejores Licores</p>
+            <h2>100% Colombianos <br>Bebidas Refrescantes</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+    <!--WhatsApp Boton-->
+    <div id="whatsapp-button" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    
+    <script src="java.js"></script>
+
+    <!--recuadros sobre informacion importante como tarjetas de rehgalo, sservicio al cliente, evios y contrareembolso con logos-->
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envio gratuito a nivel nacional</span>
+                    <p>En pedido Superior a $250.000 Pesos</p>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i> 
+                <div class="feature-content">
+                    <span>Servicio al Cliente 24/7</span>
+                    <p>Llámenos al 123-567-890</p>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjetas Regalo</span>
+                    <p>Si no sabes que regalar Obsequia Una Gift Card</p>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantia de devolucion de dinero</p>
+                </div>
+            </div>
+        </section>
+        <!-- container sobre categorias de bebidas con titulos y imagenes puestas desde el css-->
+        <section class="container top-categories">
+            <h1 class="heading-1">Mejores Categorias</h1>
+            <div class="container-categories">
+                <div class="card-category category-cerveza">
+                    <p>Cervezas</p>
+                    <span>Ver mas</span>
+                </div>
+                <div class="card-category category-vino">
+                    <p>Vinos</p>
+                    <span>Ver mas</span>
+                </div>
+                <div class="card-category category-licor">
+                    <p>Licores</p>
+                    <span>Ver mas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- container sobre los productos mas vendidos para comprar -->
+        <section class="container top-products">
+            <h1 class="heading-1">Mejores Productos</h1>
+
+            <div class="container-options">     <!--botones sobre menu-->
+                <span class="active">Destacados</span>
+                <span>Más recientes</span>
+                <span>Mejores vendidos</span>
+            </div>
+
+            <div class="container-products">
+                <!--Producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./masvendidos/VinoMasVendido.png" alt="Vino Chandon">
+                        <span class="discount">-10%</span>  <!--descuento del producto-->
+                        <div class="button-group">  <!--iconos escondidos-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">     <!--estrellas de calificaicon de productos-->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Vino Chandon</h3>   <!--nombre del producto-->
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>     <!--icono compra-->
+                        </span>
+                        <p class="price">$74.160 <span>$82.400</span></p>   <!--precios-->
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./masvendidos/CervezaMasVendida.png" alt="Cerveza Corona">
+                        <span class="discount">-21%</span>  <!--descuento del producto-->
+                        <div class="button-group">  <!--iconos escondidos-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars"> <!--estrellas de calificaicon de productos-->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Cerveza Corona Extra x6</h3>    <!--nombre del producto-->
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i> <!--icono compra-->
+                        </span>
+                        <p class="price">$25.500<span>$31.300</span></p>    <!--precios-->
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./masvendidos/TequilaMasVendido.png" alt="Tequila GranCementerio">
+                        <span class="discount">-18%</span>  <!--descuento del producto-->
+                        <div class="button-group">  <!--iconos escondidos-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars"> <!--estrellas de calificaicon de productos-->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Tequila GranCementerio</h3> <!--nombre del producto-->
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i> <!--icono compra-->
+                        </span>
+                        <p class="price">$81.000 <span>$98.900</span></p>   <!--precios-->
+                    </div>
+                </div>
+
+
+                <!-- Producto 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./masvendidos/WhiskyMasVendido.png" alt="Whisky OldParr">
+                        <span class="discount">-3%</span>   <!--descuento del producto-->
+                        <div class="button-group">  <!--iconos escondidos-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars"> <!--estrellas de calificaicon de productos-->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Whisky Old Parr 12 años</h3> <!--nombre del producto-->
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i> <!--icono compra-->
+                        </span>
+                        <p class="price">$145.000 <span>$150.000</span></p> <!--precios-->
+                    </div>
+                </div>
+
+    
+            </div>
+        </section>
+
+        <section class="gallery">
+
+            <!-- Galeria Imagenes arreglado desde el css-->
+            <img 
+                src="./gallery1.png"
+                alt="Gallery Img1" 
+                class="gallery-img-1"
+            /><img 
+                src="./gallery2.png"
+                alt="Gallery Img2" 
+                class="gallery-img-2"
+            /><img 
+                src="./gallery3.png"
+                alt="Gallery Img3" 
+                class="gallery-img-3"
+            /><img 
+                src="./gallery4.png" 
+                alt="Gallery Img4" 
+                class="gallery-img-4"
+            /><img 
+                src="./gallery5.png" 
+                alt="Gallery Img5" 
+                class="gallery-img-5"
+                
+            />
+        </section>
+
+        <section class="container specials">    <!--titulo de productos especiales-->
+            <h1 class="heading-1">Especiales</h1>
+
+
+            <div class="container-products">
+                <!-- ESPECIAL Producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./masvendidos/VinoMasVendido.png" alt="Vino Chandon">
+                        <span class="discount">-10%</span> <!-- Descuento en Producto -->
+                        <div class="button-group"> <!-- Iconos Aplicados (Botones)-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars"> <!-- Estrellas de Calificacion -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Vino Chandon</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">$74.160 <span>$82.400</span></p> <!-- Precio dado al producto -->
+                    </div>
+                </div>
+
+                <!-- ESPECIAL Producto 2 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./SPECIAL2.png" alt="Ginebra Premium">
+                       
+                        <div class="button-group"> <!-- Iconos Aplicados (Botones)-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">  <!-- Estrellas de Calificacion -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Ginebra Premium Strawberry</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">$25.500<span>$31.300</span></p> <!-- Precio dado al producto -->
+                    </div>
+                </div>
+
+                <!--  ESPECIAL Producto 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./special3.png" alt="Vino Rosado Muga">
+                        <span class="discount">-35%</span>  <!-- Descuento en Producto -->
+                        <div class="button-group"> <!-- Iconos Aplicados (Botones)-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">  <!-- Estrellas de Calificacion -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Vino Rosado Muga</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">$68.575 <span>$105.500</span></p> <!-- Precio dado al producto -->
+                    </div>
+                </div>
+
+
+                <!-- ESPECIAL Producto 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./special4.png" alt="Martini Rosso">
+                        
+                        <div class="button-group"> <!-- Iconos Aplicados (Botones)-->
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>   
+                    </div>
+
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Martini Rosso</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">$145.000 <span>$150.000</span></p> <!-- Precio dado al producto -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--creacion de Blogs de nuestra pagina-->
+
+         <section class="container blogs">
+            <h1 class="heading-1">Ultimos Blogs</h1>
+
+
+            <div class="container-blogs">
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="./Blog1.jpg" alt="" width="250px" height="250px">
+                            <div class="button-group-blog">
+                                <span>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>
+                                </span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                    
+
+                            </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>La Alegria de Celebrar</h3>
+                        <span>29 Noviembre 2022</span>
+                        <p>
+                            La alegría de celebrar es una emoción contagiosa que nos llena de energía y vitalidad. Nos permite compartir momentos especiales,
+                            creando recuerdos inolvidables que perdurarán en el tiempo. Y esto solo pasa en ElixirTinto
+
+                        </p>
+
+                        <div class="btn-read-more">Leer más</div>
+
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="./blog2.jpg" alt="" width="250px" height="250px">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>
+                                </span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>La Pasion del Momento</h3>
+                        <span>4 Enero 2024</span>
+                        <p>
+                            Es como un fuego ardiente que enciende nuestras emociones y nos impulsa a vivir intensamente. Es el momento en el que nos entregamos por completo a lo que estamos haciendo,
+                            sin pensar en el pasado ni preocuparnos por el futuro.
+
+                        </p>
+
+                        <div class="btn-read-more">Leer más</div>
+
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="./blog3.JPG" alt="" width="250px" height="250px">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>
+                                </span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Recuerdos Para Siempre</h3>
+                        <span>6 agosto 2020</span>
+                        <p>
+                            son como tesoros guardados en el cofre de nuestra mente y corazón. Cada momento especial, cada risa compartida y
+                            cada experiencia vivida se convierte en un fragmento inolvidable de nuestro viaje. Un viaje eterno en ElixirTinto
+
+                        </p>
+
+                        <div class="btn-read-more">Leer más</div>
+
+                    </div>
+                </div>
+            </div>
+
+
+         </section>
+    </main>
+    <script
+            src="https://kit.fontawesome.com/81581fb069.js"
+            crossorigin="anonymous"
+    ></script>
+        <!--carrusel de imagenes de mnarcas de productos-->
+        <div class="carousel-container">
+            <div class="slide" id="color">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-1800-tequila.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-alma-mora.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-400-conejos.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-rivarose.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-riedel.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-mar-de-frades.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-muga.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-maestro-dobel.png" alt="">
+                <img src="https://dislicoresqa.vtexassets.com/arquivos/marcas-marques-de-murrieta.png" alt="">
+            </div>
+        </div>
+        
+        
+        
+    
+        <!--container para agregar mapa de ubicacion (con la ayuda de una extension de google maps)-->
+        <section class="container mapa">
+                <div class="contact-in">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.897007378222!2d-73.12581412411323!3d7.137907515716848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6815720a945595%3A0x77ede00307762def!2sCl.%209a%20%232445%2C%20Bucaramanga%2C%20Santander!5e0!3m2!1ses-419!2sco!4v1710108507353!5m2!1ses-419!2sco" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                <!--crear recuadro de contacto para el cliente-->
+                <div class="contact-form">
+                    <h1>Contáctanos</h1>
+                    <form >
+                        <input type="text" placeholder="Name" class="contact-form-txt"/>
+                        <input type="text" placeholder="Email" class="contact-form-txt" />
+                        <textarea placeholder="Message" class="contact-form-textarea"></textarea>
+                        <input type="Submit" name="Submit" class="contact-form-btn"/>
+                    </form>
+                </div>
+                </div>
+        </section>  
+
+        <!--creacion del footer de la pagina-->
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejorar Footer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenido de la página -->
+
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer logo-section">
+                <div class="logo">
+                    <img src="./Logos/Elixir_tinto2.png" alt="Elixir Tinto Logo"> <!--poner el logo de la pagina-->
+                </div>
+                <div class="terms"> <!--pequeño texto sobre el alcohol-->
+                    <p>“DISFRUTA LO MEJOR DE TOMAR, SIN LO MALO DE EXCEDERTE”. EL EXCESO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD. LEY 30 DE 1986. PROHÍBASE EL EXPENDIO DE BEBIDAS EMBRIAGANTES A MENORES DE EDAD Y MUJERES EMBARAZADAS. LEY 124 DE 1994.”</p>
+                </div>
+            </div>
+            <!--div para poner informacion sobre nosotros-->
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="#">Quienes Somos</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Cotizaciones</a>
+            </div>
+            <!--div para poner servicios-->
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+            <!--div para poner los iconos de aplicaciones de contacto-->
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+        <!--div para poner los derechos de autor-->
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2024 <b>Elixir Tinto</b></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
+
+
+
+    </body>
+</html>
